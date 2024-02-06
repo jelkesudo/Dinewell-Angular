@@ -1,0 +1,35 @@
+<div class="container fj-move-100">
+    <h2>Your orders: </h2>
+    <div *ngIf="orders.data.length === 0; else ordersPrint">
+        <p>You have not ordered anything. Yet...</p>
+      </div>
+      <ng-template #ordersPrint>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th scope="col">Order number</th>
+                      <th scope="col">Order Address</th>
+                      <th scope="col">See order</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let o of orders.data">
+                      <td>{{ o.orderNumber }}</td>
+                      <td>{{ o.orderAddress }}</td>
+                      <td><button (click)="openModal(o)" class="btn btn-primary">See order</button></td>
+                    </tr>
+                  </tbody>
+            </table>
+            
+            <nav>
+                <ul class="pagination">
+                  <li class="page-item" *ngFor="let page of pageNumbers">
+                    <div class="page-link" (click)="onPageChange(page)">{{ page }}</div>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+      </ng-template>
+</div>
+  

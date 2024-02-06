@@ -1,0 +1,19 @@
+<div class="container fj-move-100">
+  <h2>Your cart has: </h2>
+  <div class="row pt-3">
+    <div class="col-12 col-sm-6 col-lg-4 pb-2"><a href="/myorders"><button class="btn btn-secondary">My orders</button></a></div>
+  </div>
+  <div class="row pt-3">
+      <div *ngIf="orderArray.length === 0; else orders">
+          <p>{{ message }}</p>
+        </div>
+        <ng-template #orders>
+          <div><button class="btn btn-secondary" (click)="sendOrder()">Order all</button></div>
+          <div><input type="text" [(ngModel)]="userAddress"><p>{{ errorMessage }}</p></div>
+          <div *ngFor="let order of orderArray">
+            <p>Meal:{{ order.name }} - Quantity: {{ order.quantity }} - Price: {{ order.quantity * order.price }}$</p>
+          </div>
+          <p>Total price: {{ total }}$</p>
+        </ng-template>
+  </div>
+</div>

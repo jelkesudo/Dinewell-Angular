@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+:root {
+    --fj-red: #A3320B;
+    --fj-oker: #FFFDEA;
+}
+@font-face {
+    font-family: "all-text";
+    src: url("assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "title-text";
+    src: url("assets/fonts/Shrikhand-Regular.ttf");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--fj-oker);
+    font-family: "all-text";
+}
+h1, .fj-header-font{
+    font-family: "title-text";
+}
+a{
+    color: white !important;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.fj-a-black a{
+    color: black !important;
+}
+a:hover{
+    color: #dd6a35 !important;
+}
+header, footer{
+    width: 100%;
+    z-index: 10;
+    background-color: var(--fj-red) !important;
+    color: white;
+}
+header{
+    position: fixed;
+}
+#homePage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textSpan{
+    color: var(--fj-red) !important;
+}
+.textSpan:hover{
+    color: #cc8067;
+}
+.divCentered{
+    width: 50%;
+    height: 200px;
+    padding: 30px 0px;
+}
+.navbar-brand{
+    transition: 0.2s;
+}
+.fj-move-100{
+    margin-top: 100px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

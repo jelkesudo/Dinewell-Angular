@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Home",
+        "path": "/home"
+    },
+    {
+        "id": 2,
+        "name": "Restaurants",
+        "path": "/restaurant"
+    },
+    {
+        "id": 3,
+        "name": "Order",
+        "path": "/order"
+    },
+    {
+        "id": 4,
+        "name": "Author",
+        "path": "/author"
+    }
+]

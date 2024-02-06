@@ -1,0 +1,11 @@
+<footer>
+    <ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li *ngFor="let n of nav" class="nav-item">
+                <a class="nav-link active" aria-current="page" [href]="n.path">{{ n.name }}</a>
+              </li>
+            </ul>
+        </div>
+    </ul>
+</footer>

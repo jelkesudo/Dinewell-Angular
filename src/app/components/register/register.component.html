@@ -1,0 +1,61 @@
+<div class="container fj-move-100">
+    <form (ngSubmit)="onSubmit()" [formGroup]="registrationForm" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" class="form-control" formControlName="firstName" required>
+          <div class="text-danger" *ngIf="firstNameInvalid">
+            First Name is required and should start with an uppercase letter and be at least 3 characters long.
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" class="form-control" formControlName="lastName" required>
+          <div class="text-danger" *ngIf="lastNameInvalid">
+            Last Name is required and should start with an uppercase letter and be at least 3 characters long.
+          </div>
+        </div>
+      
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" formControlName="username" required>
+            <div class="text-danger" *ngIf="usernameInvalid">
+              Username is required and should start with an uppercase letter and be at least 3 characters long.
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" formControlName="email" required>
+          <div class="text-danger" *ngIf="emailInvalid">
+            Email is required and should be in a valid format.
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" formControlName="password" required>
+          <div class="text-danger" *ngIf="passwordInvalid">
+            Password need to be at least 8 characters long, have one uppercase letter, one number and one symbols.
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="addressName">Address Name (optional)</label>
+          <input type="text" id="addressName" class="form-control" formControlName="addressName">
+          <div class="text-danger" *ngIf="addressNameInvalid">
+            Address Name is required when Address Number is provided.
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="addressNumber">Address Number (optional)</label>
+          <input type="number" id="addressNumber" class="form-control" formControlName="addressNumber">
+          <div class="text-danger" *ngIf="addressNumberInvalid">
+            Address Number is required when Address Name is provided.
+          </div>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

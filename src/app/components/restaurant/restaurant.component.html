@@ -1,0 +1,37 @@
+<div class="container fj-move-100">
+    <h2>Restaurants: </h2>
+    <div class="row">
+        <div class="mb-3 form-check">
+            <label class="form-check-label" for="exampleCheck1">Search: </label>
+            <input type="text" [(ngModel)]="inputValue" (keyup)="printMenu()" class="form-input" id="searchRestaurants">
+            <label *ngFor="let category of foodCategories">
+                <input type="checkbox" [value]="category.id" (change)="toggleCategorySelection(category.id)">
+                {{ category.name }}
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let r of restaurants.data" class="col-12 col-sm-6 col-lg-4 fj-a-black">
+            <a [routerLink]="['/single-restaurant',r.id]">
+                <div class="card mb-3">
+                    <img class="card-img-top" [src]='"assets/img/"+r.image' alt="Card image cap">
+                    <div class="card-body">
+                        <h3>{{ r.name }}</h3>
+                        <p class="card-text">{{ r.description }}</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="street">{{ r.address }}</div>
+                            <div class="working_hours">{{ r.workingHours }}</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <nav>
+        <ul class="pagination">
+          <li class="page-item" *ngFor="let page of pageNumbers">
+            <div class="page-link" (click)="onPageChange(page)">{{ page }}</div>
+          </li>
+        </ul>
+    </nav>
+</div>

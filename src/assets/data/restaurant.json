@@ -1,0 +1,285 @@
+[
+    {
+        "id": 47,
+        "name": "Fish and Chips",
+        "description": "All the fish you can eat",
+        "address": "Makedonska 78",
+        "workingHours": "6:00 - 18:00",
+        "image": "fishandchips.jpg",
+        "foodCategories": [
+            {
+                "id": 58,
+                "meals": [
+                    {
+                        "id": 279,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 13.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 281,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 19.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 270,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 17.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 271,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 5.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 272,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 29.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 273,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 14.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 275,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 13.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 274,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 12.99,
+                        "image": "fishandchips.jpg"
+                    }
+                ],
+                "sides": [
+                    {
+                        "id": 296,
+                        "price": 6.00
+                    },
+                    {
+                        "id": 297,
+                        "price": 10.00
+                    },
+                    {
+                        "id": 298,
+                        "price": 1.00
+                    },
+                    {
+                        "id": 323,
+                        "price": 12.50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "name": "MyBurger",
+        "description": "Burger like no other",
+        "address": "Kosovska 25",
+        "workingHours": "10:00 - 21:00",
+        "image": "myburger.jpg",
+        "foodCategories": [
+            {
+                "id": 59,
+                "meals": [
+                    {
+                        "id": 277,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 14.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 278,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 14.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 287,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 11.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 280,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 2.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 269,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 4.99,
+                        "image": "fishandchips.jpg"
+                    }
+                ],
+                "sides": [
+                    {
+                        "id": 299,
+                        "price": 9.00
+                    },
+                    {
+                        "id": 300,
+                        "price": 8.00
+                    },
+                    {
+                        "id": 301,
+                        "price": 15.00
+                    },
+                    {
+                        "id": 302,
+                        "price": 2.00
+                    },
+                    {
+                        "id": 309,
+                        "price": 12.00
+                    },
+                    {
+                        "id": 304,
+                        "price": 6.00
+                    },
+                    {
+                        "id": 305,
+                        "price": 7.00
+                    },
+                    {
+                        "id": 306,
+                        "price": 5.00
+                    },
+                    {
+                        "id": 307,
+                        "price": 9.00
+                    },
+                    {
+                        "id": 308,
+                        "price": 4.00
+                    },
+                    {
+                        "id": 303,
+                        "price": 3.00
+                    },
+                    {
+                        "id": 310,
+                        "price": 10.00
+                    },
+                    {
+                        "id": 311,
+                        "price": 11.00
+                    },
+                    {
+                        "id": 312,
+                        "price": 4.00
+                    },
+                    {
+                        "id": 322,
+                        "price": 8.00
+                    }
+                ]
+            },
+            {
+                "id": 60,
+                "meals": [
+                    {
+                        "id": 276,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 20.99,
+                        "image": "fishandchips.jpg"
+                    }
+                ],
+                "sides": []
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "name": "Pinthouse Pizza",
+        "description": "Best pizza in town and further",
+        "address": "Zmaj jovina 16",
+        "workingHours": "8:00 - 20:00",
+        "image": "pinthousepizza.jpg",
+        "foodCategories": [
+            {
+                "id": 57,
+                "meals": [
+                    {
+                        "id": 286,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 20.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 282,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 8.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 283,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 18.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 285,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 20.99,
+                        "image": "fishandchips.jpg"
+                    },
+                    {
+                        "id": 284,
+                        "description": "Description for the given food, like ingredients and how many grams, for the sake of finishing the project this will be the same for all food",
+                        "price": 15.99,
+                        "image": "fishandchips.jpg"
+                    }
+                ],
+                "sides": [
+                    {
+                        "id": 321,
+                        "price": 5.00
+                    },
+                    {
+                        "id": 320,
+                        "price": 6.00
+                    },
+                    {
+                        "id": 319,
+                        "price": 7.00
+                    },
+                    {
+                        "id": 318,
+                        "price": 12.00
+                    },
+                    {
+                        "id": 317,
+                        "price": 9.99
+                    },
+                    {
+                        "id": 316,
+                        "price": 8.00
+                    },
+                    {
+                        "id": 315,
+                        "price": 7.00
+                    },
+                    {
+                        "id": 314,
+                        "price": 9.00
+                    },
+                    {
+                        "id": 313,
+                        "price": 3.00
+                    }
+                ]
+            }
+        ]
+    }
+]

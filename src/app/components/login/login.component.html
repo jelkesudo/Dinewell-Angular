@@ -1,0 +1,12 @@
+<div class="container fj-move-100">
+    <form (submit)="onSubmit()">
+          <div class="form-group">
+            <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p>{{ loginError }}</p>
+      </form>
+</div>

@@ -1,0 +1,17 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ modalData.name }}</h4>
+    <button type="button" class="btn btn-danger close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p class="card-text">{{ modalData.description }}</p>
+    <div class="d-flex justify-content-between">
+        <div class="price">{{ modalData.price }}$</div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+    <input type="number" [(ngModel)]="quantity" min="1" max="99">
+    <button type="button" (click)="putInOrder()" class="btn btn-primary">Order</button>
+</div>

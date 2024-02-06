@@ -1,0 +1,29 @@
+<div class="container fj-move-100">
+    <h2>What do you want to do: </h2>
+    <div class="row pt-3">
+        <div class="col-12 col-sm-6 col-lg-4 pb-2"><a href="/addrestaurant"><button class="btn btn-secondary">Add a new restaurant</button></a></div>
+    </div>
+    <div class="row">
+        <div *ngFor="let r of restaurants.data" class="col-12 col-sm-6 col-lg-4 fj-a-black">
+            <div class="card mb-3">
+                <img class="card-img-top" [src]='"assets/img/"+r.image' alt="Card image cap">
+                <div class="card-body">
+                    <h3>{{ r.name }}</h3>
+                    <p class="card-text">{{ r.description }}</p>
+                    <div class="d-flex justify-content-between">
+                        <div class="street">{{ r.address }}</div>
+                        <div class="working_hours">{{ r.workingHours }}</div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="working_hours m-2">Updated at: {{ r.updatedAt }}</div>
+                        <div class="working_hours m-2">Deleted at: {{ r.deletedAt }}</div>
+                    </div>
+                    <div>
+                        <a [routerLink]="['/updaterestaurant', r.id]"><button class="btn btn-primary mx-2">Update</button></a>
+                        <button (click)="openModalDelete(r)" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

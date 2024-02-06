@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h4 class="modal-title">Delete Restaurant</h4>
+    <button type="button" class="btn btn-danger close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p class="card-text">Are you sure you want to delete this restaurant?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+    <button type="button" (click)="deleteRestaurant(modalData.id)" class="btn btn-primary">Delete</button>
+</div>
